@@ -36,6 +36,8 @@ searchButton.addEventListener('click', async () => {
       case 'Snow':
         imageWeather.src = 'src/img/snow.png';
         break;
+      case 'Mist':
+        imageWeather.src = 'src/img/mist.png';
     }
 
     weatherDescription.innerText = detailWeather.description;
@@ -59,6 +61,7 @@ searchButton.addEventListener('click', async () => {
         throw new Error('Please write your location.');
     }
     updateUI(weather);
+    console.log(weather)
   } catch (e) {
     alert(e);
     // location.reload();
