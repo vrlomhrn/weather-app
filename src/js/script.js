@@ -61,7 +61,6 @@ searchButton.addEventListener('click', async () => {
         throw new Error('Please write your location.');
     }
     updateUI(weather);
-    console.log(weather)
   } catch (e) {
     alert(e);
     // location.reload();
